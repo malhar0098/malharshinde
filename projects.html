@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malhar Shinde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="name">
+            <a href="portfolio.html">Malhar Shinde</a>
+        </div>
+        <div class="nav">
+            <a class="hideonphone" href="about.html">About</a>
+            <a class="hideonphone" id="active" href="projects.html">Projects</a>
+            <a class="hideonphone" href="contact.html">Contact</a>
+            <a href="#" onclick="showSidenav()" class="menubutton"><img src="ASSETS/menu.png" alt="menu"></a>
+        </div>
+        <div class="sidenav">
+            <a href="#" onclick="hideSidenav()" class="closebutton"><img src="ASSETS/close.png" alt="closebutton"></a>
+            <a href="about.html">About</a>
+            <a href="projects.html" id="active">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="projects">
+        <div class="projectsheading">
+            <h1>
+                Projects
+            </h1>
+            <br>
+            <p>
+                Here are some of the projects i have played around
+            </p>
+        </div>
+        <div class="projectlist">
+            <a href="" class="project">
+                <div class="projectimg">
+                    <img src="ASSETS/password.png" alt="" width="100%">
+                </div>
+                <div class="projectdesc">
+                    <h1>Password Analyzer</h1>
+                    <br>
+                    <p>A password analyzer web app evaluates password strength, providing real-time feedback and suggestions for improved security.</p>
+                </div>
+            </a>
+            <a href="" class="project">
+                <div class="projectimg">
+                    <img src="ASSETS/genius.png" alt="" width="100%">
+                </div>
+                <div class="projectdesc">
+                    <h1>UI Clones</h1>
+                    <br>
+                    <p>A website UI clone project replicates a popular website's interface, focusing on layout, styling, and responsiveness using HTML, CSS, and JavaScript.</p>
+                </div>
+            </a>
+            <a href="" class="project">
+                <div class="projectimg">
+                    <img src="ASSETS/portfolio.png" alt="" width="100%">
+                </div>
+                <div class="projectdesc">
+                   <h1>Personal Portfolio</h1>
+                    <br>
+                    <p>A personal portfolio website showcases skills, projects, and achievements, offering an interactive platform for networking and career growth.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="contactsection">
+        <h1>Looking for a Web Developer?</h1>
+        <a href="contact.html" class="contactbutton">GET IN TOUCH</a>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <h1>&copy2025 Malhar Shinde</h1>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/malhar-shinde-1a88b6331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><img src="ASSETS/linkdin_logo.png" alt="linked_in"></a>
+            <a href="https://www.instagram.com/malharrrrrrrrrr/?igsh=NTFtZzRsb3h2ZnRl" target="_blank"><img src="ASSETS/instagram_icon.png" alt="instagram"></a>
+        </div>
+    </div>
+    <script>
+        function showSidenav(){
+            const sidenav=document.querySelector('.sidenav')
+            sidenav.style.display='flex'
+        }
+        function hideSidenav(){
+            const sidenav=document.querySelector('.sidenav')
+            sidenav.style.display='none'
+        }
+    </script>
+</body>
+</html>

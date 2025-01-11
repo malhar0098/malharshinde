@@ -1,0 +1,1154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #111215
+}
+
+body{
+    color: #f2f7fc;
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Bodoni Moda";
+}
+
+.header{
+    margin: 25px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .name a{
+    text-decoration: none;
+    font-family: "Sono", serif;
+    font-size: 30px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.header .name a:hover {
+    font-weight: 500;
+    color: #f2f7fc;
+}
+
+.header .name a:not(:hover) {
+    color: #f2f7fc;
+}
+
+.header .nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header .nav .menubutton{
+    display: none;
+}
+
+.header .nav .menubutton img{
+    width: 30px;
+    background: transparent;
+    display: block;
+}
+
+.header .nav a{
+    color: #f2f7fc;
+    text-decoration: none;
+    font-family: "Sono", serif;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.header .nav a:hover {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f2f7fc;
+}
+
+.header .nav a:not(:hover) {
+    color: #f2f7fc;
+}
+
+.header .nav #active{
+    padding: 10px;
+    border: 2px #f2f7fc solid;
+}
+
+.header .sidenav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 100vh;
+    width: 50%;
+    display: none;
+    flex-flow: column;
+    align-items: flex-end;
+    padding-top: 20px;
+    padding-right: 20px;
+    gap: 40px;
+    background-image: url("https://cdn.prod.website-files.com/62acc17f0bea707cb5017f40/62acdf59af2ccf640878076d_Sword.svg");
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px #f2f7fc solid;
+}
+
+.header .sidenav .closebutton img{
+    width: 20px;
+    background: transparent;
+}
+
+.header .sidenav a{
+    color: #f2f7fc;
+    background: transparent;
+    text-decoration: none;
+    font-family: "Sono", serif;
+    font-size: 12px;
+}
+
+.about{
+    margin: 25px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px #f2f7fc solid;
+}
+
+.about .profile{
+    width: 30%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://cdn.prod.website-files.com/62acc17f0bea707cb5017f40/62ad1c016ceadf6c3de09209_Crystal.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: left;
+    background-size:contain;
+}
+
+.about .profile img{
+    background: transparent;
+    border: 4px #f2f7fc solid;
+    transition: 0.5s;
+}
+
+.about .profile img:hover {
+    padding: 10px;
+}
+
+.about .profile img:not(:hover) {
+    padding: 20px;
+}
+
+.about .bio{
+    width: 70%;
+}
+
+.about .bio h1{
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 88px;
+}
+
+.about .bio p{
+    font-family: "Sono";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.projects{
+    margin: 25px;
+    padding: 50px;
+    background-image: url("https://cdn.prod.website-files.com/62acc17f0bea707cb5017f40/62acdf59af2ccf640878076d_Sword.svg");
+    background-repeat:no-repeat;
+    background-position:top;
+    background-blend-mode:soft-light;
+}
+
+.projects .projectsheading{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    background: transparent;
+}
+
+.projects .projectsheading h1{
+    font-size: 72px;
+    font-weight: 800;
+    transition: 0.3s;
+    background: transparent;
+}
+
+.projects .projectsheading h1:hover {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.projects .projectsheading h1:not(:hover) {
+    font-weight: 800;
+}
+
+.projects .projectsheading p{
+    font-family: "Sono";
+    font-size: 18px;
+    font-weight: 400;
+    background: transparent;
+}
+
+.projectlist{
+    align-items: start;
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 50px;
+    background: transparent;
+}
+
+.projectlist .project{
+    width: 40%;
+    height: 500px;
+    border: 2px white solid;
+    display: flex;
+    flex-flow: column;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #f2f7fc;
+}
+
+.projectlist .project:hover{
+    padding: 8px;
+    box-shadow: 8px 8px rgb(200, 200, 200);
+}
+
+.projectlist .project .projectimg{
+    border: 2px #f2f7fc solid;
+}
+
+.projectlist .project .projectdesc{
+    padding: 10px;
+    height: 100%;
+    border: 2px #f2f7fc solid;
+}
+
+.projectlist .project .projectdesc h1{
+    font-size: 40px;
+}
+
+.projectlist .project .projectdesc p{
+    font-family: "Sono";
+    font-size: 20px;
+}
+
+.showmore{
+    border: 2px #f2f7fc solid;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.showmore a{
+    font-family: "Sono";
+    color: #f2f7fc;
+    text-decoration: none;
+    padding: 14px;
+    border: 3px #f2f7fc solid;
+    transition: 0.3s;
+}
+
+.showmore a:hover{
+    padding: 20px;
+    color: #111215;
+    background-color: #f2f7fc;
+    font-weight: 600;
+}
+
+.contactsection{
+    margin: 25px;
+    padding: 80px;
+    border: 3px #f2f7fc solid;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 50px;
+    background-image: url("https://cdn.prod.website-files.com/62acc17f0bea707cb5017f40/62ace92c4159c5527c1f3f56_Moth.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode:soft-light;
+    background-size: contain;
+}
+
+.contactsection h1{
+    font-size: 62px;
+    font-weight: 800;
+    background: transparent;
+}
+
+.contactsection .contactbutton{
+    padding: 14px;
+    text-decoration: none;
+    color: #f2f7fc;
+    font-family: "Sono";
+    font-size: 24px;
+    border: 3px #f2f7fc solid;
+    transition: 0.3s;
+}
+
+.contactsection .contactbutton:hover{
+    padding: 22px;
+    color: #111215;
+    background-color: #f2f7fc;
+    font-weight: 600;
+}
+
+.footer{
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .copyright h1{
+    font-family: "Sono";
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.footer .social{
+    display: flex;
+    gap: 20px;
+}
+
+.footer .social img{
+    width: 40px;
+    transition: 0.3s;
+}
+
+.footer .social img:hover{
+    width: 45px;
+}
+
+.contactform{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 25px;
+    padding: 25px;
+    border: 3px #f2f7fc solid;
+}
+
+.contactform .getintouch{
+    width: 50%;
+    padding-left: 200px;
+}
+
+.contactform .getintouch h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.contactform .getintouch p{
+    font-family: "Sono";
+    font-size: 18px;
+}
+
+.contactform form{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contactform form input, textarea{
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 2px #f2f7fc solid;
+    color: #f2f7fc;
+    font-family: "Sono";
+    font-size: 20px;
+    resize: none;
+}
+
+.contactform form textarea{
+    height: 200px;
+}
+
+.contactform form input[type=submit]{
+    border: 2px #f2f7fc solid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contactform form input[type=submit]:hover{
+    background-color: #f2f7fc;
+    color: #111215;
+    font-weight: 600;
+}
+
+@media (max-width: 1025px) {
+    .header{
+        margin: 17.7px;
+        padding: 17.7px;
+    }
+
+    .header .name a{
+        font-size: 21.3px;
+    }
+
+    .header .nav a{
+        font-size: 11.37px;
+    }
+
+    .header .nav a:hover {
+        font-size: 12.8px;
+        font-weight: 600;
+        color: #f2f7fc;
+    }
+    
+    .header .nav a:not(:hover) {
+        color: #f2f7fc;
+    }
+
+    .header .nav #active{
+        padding: 8px;
+    }
+
+    .about{
+        margin: 17.7px;
+        padding: 35.5px;
+    }
+
+    .about .profile{
+        padding: 28.4px;
+    }
+
+    .about .profile img:hover {
+        padding: 7.1px;
+    }
+    
+    .about .profile img:not(:hover) {
+        padding: 14.2px;
+    }
+
+    .about .bio h1{
+        font-weight: 800;
+        font-size: 51.2px;
+        line-height: 62.57px;
+    }
+    
+    .about .bio p{
+        font-size: 12.8px;
+        line-height: 21.3px;
+    }
+    
+    .projects{
+        margin: 17.7px;
+        padding: 35.5px;
+    }
+
+    .projects .projectsheading{
+        margin-bottom: 35.5px;
+    }
+
+    .projects .projectsheading h1{
+        font-size: 51.2px;
+    }
+
+    .projects .projectsheading h1:hover {
+        font-size: 56.8px;
+    }
+
+    .projects .projectsheading p{
+        font-size: 12.8px;
+    }
+
+    .projectlist{
+        gap:35.5px;
+    }
+
+    .projectlist .project{
+        height: 367.5px;
+    }
+
+    .projectlist .project:hover{
+        padding: 5.68px;
+        box-shadow: 5.68px 5.68px rgb(200, 200, 200);
+    }
+
+    .projectlist .project .projectdesc{
+        padding: 7.1px;
+    }
+
+    .projectlist .project .projectdesc h1{
+        font-size: 28.4px;
+    }
+    
+    .projectlist .project .projectdesc p{
+        font-size: 14.2px;
+    }
+
+    .showmore{
+        margin-top: 50px;
+        font-size: 18px;
+    }
+    
+    .showmore a{
+        padding: 12px;
+    }
+    
+    .showmore a:hover{
+        padding: 16px;
+    }
+
+    .contactsection{
+        margin: 17.7px;
+        padding: 56.8px;
+        gap: 35.5px;
+    }
+
+    .contactsection h1{
+        font-size: 44.08px;
+    }
+
+    .contactsection .contactbutton{
+        padding: 9.95px;
+        font-size: 17.06px;
+    }
+
+    .contactsection .contactbutton:hover{
+        padding: 16px;
+    }
+
+    .footer{
+        margin: 17.7px;
+    }
+
+    .footer .copyright h1{
+        font-size: 15.64px;
+    }
+    
+    .footer .social{
+        gap: 14.2px;
+    }
+
+    .footer .social img{
+        width: 28.4px;
+    }
+    
+    .footer .social img:hover{
+        width: 32px;
+    }
+
+    .contactform{
+        gap: 18px;
+        margin: 17.7px;
+        padding: 17.7px;
+    }
+    
+    .contactform .getintouch{
+        width: 50%;
+        padding-left: 150px;
+    }
+    
+    .contactform .getintouch h1{
+        font-size: 40px;
+        margin-bottom: 13px;
+    }
+    
+    .contactform .getintouch p{
+        font-size: 16px;
+    }
+    
+    .contactform form{
+        gap: 18px;
+    }
+    
+    .contactform form input, textarea{
+        width: 250px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .contactform form textarea{
+        height: 150px;
+    }
+}
+
+@media (max-width: 769px) {
+    .header{
+        margin: 13.275px;
+        padding: 13.275px;
+    }
+
+    .header .name a{
+        font-size: 15.975px;
+    }
+
+    .header .nav a{
+        font-size: 8.5275px;
+    }
+
+    .header .nav a:hover {
+        font-size: 9.6px;
+    }
+
+    .header .nav #active{
+        padding: 6px;
+    }
+
+    .about{
+        margin: 13.275px;
+        padding: 26.625px;
+    }
+
+    .about .profile{
+        padding: 21.3px;
+    }
+
+    .about .profile img:hover {
+        padding: 5.325px;
+    }
+    
+    .about .profile img:not(:hover) {
+        padding: 10.65px;
+    }
+
+    .about .bio h1{
+        font-size: 38.4px;
+        line-height: 46.9275px;
+    }
+    
+    .about .bio p{
+        font-size: 9.6px;
+        line-height: 15.975px;
+    }
+    
+    .projects{
+        margin: 13.275px;
+        padding: 26.625px;
+    }
+
+    .projects .projectsheading{
+        margin-bottom: 26.625px;
+    }
+
+    .projects .projectsheading h1{
+        font-size: 38.4px;
+    }
+
+    .projects .projectsheading h1:hover {
+        font-size: 42.6px;
+    }
+
+    .projects .projectsheading p{
+        font-size: 9.6px;
+    }
+
+    .projectlist{
+        gap:26.625px;
+    }
+
+    .projectlist .project{
+        height: 302px;
+    }
+
+    .projectlist .project:hover{
+        padding: 4.26px;
+        box-shadow: 4.26px 4.26px rgb(200, 200, 200);
+    }
+
+    .projectlist .project .projectdesc{
+        padding: 5.325px;
+        height: 100%;
+    }
+
+    .projectlist .project .projectdesc h1{
+        font-size: 21.3px;
+    }
+    
+    .projectlist .project .projectdesc p{
+        font-size: 10.65px;
+    }
+
+    .showmore{
+        margin-top: 40px;
+        font-size: 14px;
+    }
+    
+    .showmore a{
+        padding: 12px;
+        border: 3px #f2f7fc solid;
+    }
+    
+    .showmore a:hover{
+        padding: 18px;
+    }
+
+    .contactsection{
+        margin: 13.275px;
+        padding: 42.6px;
+        gap: 26.625px;
+    }
+
+    .contactsection h1{
+        font-size: 33.06px;
+    }
+
+    .contactsection .contactbutton{
+        padding: 7.4625px;
+        font-size: 12.795px;
+    }
+
+    .contactsection .contactbutton:hover{
+        padding: 11.73px;
+    }
+
+    .footer{
+        margin: 13.275px;
+    }
+
+    .footer .copyright h1{
+        font-size: 11.73px;
+    }
+    
+    .footer .social{
+        gap: 10.65px;
+    }
+
+    .footer .social img{
+        width: 21.3px;
+    }
+    
+    .footer .social img:hover{
+        width: 24px;
+    }
+
+    .contactform{
+        gap: 18px;
+        margin: 17.7px;
+        padding: 17.7px;
+    }
+    
+    .contactform .getintouch{
+        padding-left: 100px;
+    }
+    
+    .contactform .getintouch h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .contactform .getintouch p{
+        font-size: 14px;
+    }
+    
+    .contactform form{
+        gap: 16px;
+    }
+    
+    .contactform form input, textarea{
+        width: 200px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .contactform form textarea{
+        height: 125px;
+    }
+}
+
+@media (max-width: 426px) {
+    .header{
+        margin: 7.37px;
+        padding: 7.37px;
+    }
+
+    .header .name a{
+        font-size: 14px;
+    }
+
+    .header .nav .menubutton{
+        display: block;
+    }
+    
+    .header .nav .menubutton img{
+        width: 20px;
+    }
+
+    .header .nav .hideonphone{
+        display: none;
+    }
+
+    .header .sidenav #active{
+        border-bottom: 1px #f2f7fc solid;
+    }
+
+    .about{
+        margin: 14.37px;
+        padding: 14.75px;
+        flex-flow: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .about .profile{
+        width: 30%;
+        padding: 12px;
+    }
+    
+    .about .profile img{
+        border: 3px #f2f7fc solid;
+    }
+
+    .about .profile img:hover {
+        padding: 3px;
+    }
+    
+    .about .profile img:not(:hover) {
+        padding: 6px;
+    }
+    
+    .about .bio{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .about .bio h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    .about .bio p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .projects{
+        margin: 7.37px;
+        padding: 14.75px;
+    }
+    
+    .projects .projectsheading{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    
+    .projects .projectsheading h1{
+        font-size: 30px;
+    }
+    
+    .projects .projectsheading h1:hover {
+        font-size: 25px;
+    }
+    
+    .projects .projectsheading p{
+        font-size: 10px;
+    }
+    
+    .projectlist{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 14.75px;
+    }
+    
+    .projectlist .project{
+        width: 90%;
+        height: 380px;
+        border: 1px #f2f7fc solid;
+    }
+    
+    .projectlist .project:hover{
+        padding: 3px;
+        box-shadow: 3px 3px rgb(200, 200, 200);
+    }
+    
+    .projectlist .project .projectdesc{
+        padding: 10px;
+    }
+    
+    .projectlist .project .projectdesc h1{
+        font-size: 26px;
+    }
+    
+    .projectlist .project .projectdesc p{
+        font-size: 15px;
+    }
+
+    .showmore{
+        margin-top: 30px;
+        font-size: 16px;
+    }
+    
+    .showmore a{
+        padding: 10px;
+        border: 2px #f2f7fc solid;
+    }
+    
+    .showmore a:hover{
+        padding: 16px;
+    }
+
+    .contactsection{
+        margin: 14.37px;
+        padding: 23.61px;
+        gap: 15px;
+        background-size: 70%;
+    }
+    
+    .contactsection h1{
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .contactsection .contactbutton{
+        padding: 8px;
+        font-size: 14px;
+        border: 2px #f2f7fc solid;
+        transition: 0.3s;
+    }
+    
+    .contactsection .contactbutton:hover{
+        padding: 14px;
+    }
+
+    .footer{
+        margin: 14.37px;
+    }
+    
+    .footer .copyright h1{
+        font-size: 10px;
+    }
+    
+    .footer .social{
+        gap: 10px;
+    }
+    
+    .footer .social img{
+        width: 25px;
+    }
+    
+    .footer .social img:hover{
+        width: 30px;
+    }
+
+    .contactform{
+        flex-flow: column;
+        gap: 30px;
+        margin: 15px;
+        padding: 15px;
+        border: 2px #f2f7fc solid;
+    }
+    
+    .contactform .getintouch{
+        width: 100%;
+        text-align: center;
+        padding: 0 30px 0 30px;
+    }
+    
+    .contactform .getintouch h1{
+        font-size: 25px;
+        margin-bottom: 7px;
+    }
+    
+    .contactform .getintouch p{
+        font-size: 14px;
+    }
+    
+    .contactform form{
+        width: 100%;
+        align-items: center;
+        gap: 14px;
+    }
+    
+    .contactform form input, textarea{
+        width: 300px;
+        height: 30px;
+        font-size: 16px;
+    }
+    
+    .contactform form textarea{
+        height: 130px;
+    }
+}
+
+@media (max-width: 376px) {
+    .header .sidenav{
+        width: 60%;
+        background-size: 40%;
+    }
+
+    .contactform .getintouch{
+        padding: 0 28px 0 28px;
+    }
+    
+    .contactform .getintouch h1{
+        font-size: 23px;
+    }
+    
+    .contactform .getintouch p{
+        font-size: 12px;
+    }
+    
+    .contactform form input, textarea{
+        width: 260px;
+        font-size: 14px;
+    }
+    
+    .contactform form textarea{
+        height: 130px;
+    }
+}
+
+@media (max-width: 321px) {
+    .header .sidenav{
+        width: 70%;
+        background-size: 40%;
+    }
+
+    .about .profile{
+        width: 40%;
+        padding: 12px;
+    }
+
+    .about .bio h1{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    
+    .about .bio p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .projects .projectsheading{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    
+    .projects .projectsheading h1{
+        font-size: 30px;
+    }
+    
+    .projects .projectsheading h1:hover {
+        font-size: 25px;
+    }
+    
+    .projects .projectsheading p{
+        font-size: 12px;
+    }
+    
+    .projectlist{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 25px;
+    }
+    
+    .projectlist .project{
+        width: 90%;
+        height: 380px;
+    }
+    
+    .projectlist .project .projectdesc h1{
+        font-size: 24px;
+    }
+    
+    .projectlist .project .projectdesc p{
+        font-size: 14px;
+    }
+
+    .showmore{
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    
+    .showmore a{
+        padding: 8px;
+        border: 2px #f2f7fc solid;
+    }
+    
+    .showmore a:hover{
+        padding: 12px;
+    }
+
+    .contactsection{
+        background-size: 80%;
+    }
+    
+    .contactsection h1{
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .contactsection .contactbutton{
+        padding: 8px;
+        font-size: 12px;
+        border: 2px #f2f7fc solid;
+        transition: 0.3s;
+    }
+    
+    .contactsection .contactbutton:hover{
+        padding: 14px;
+    }
+    
+    .footer .copyright h1{
+        font-size: 8px;
+    }
+    
+    .footer .social{
+        gap: 8px;
+    }
+    
+    .footer .social img{
+        width: 20px;
+    }
+    
+    .footer .social img:hover{
+        width: 25px;
+    }
+    
+    .contactform .getintouch{
+        padding: 0 24px 0 24px;
+    }
+    
+    .contactform .getintouch h1{
+        font-size: 22px;
+    }
+    
+    .contactform .getintouch p{
+        font-size: 12px;
+    }
+    
+    .contactform form input, textarea{
+        width: 220px;
+        height: 26px;
+        font-size: 14px;
+    }
+    
+    .contactform form textarea{
+        height: 100px;
+    }
+}

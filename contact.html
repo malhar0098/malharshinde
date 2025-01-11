@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malhar Shinde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="name">
+            <a href="portfolio.html">Malhar Shinde</a>
+        </div>
+        <div class="nav">
+            <a class="hideonphone" href="about.html">About</a>
+            <a class="hideonphone" href="projects.html">Projects</a>
+            <a class="hideonphone" id="active" href="contact.html">Contact</a>
+            <a href="#" onclick="showSidenav()" class="menubutton"><img src="ASSETS/menu.png" alt="menu"></a>
+        </div>
+        <div class="sidenav">
+            <a href="#" onclick="hideSidenav()" class="closebutton"><img src="ASSETS/close.png" alt="closebutton"></a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" id="active">Contact</a>
+        </div>
+    </div>
+    <div class="contactform">
+        <div class="getintouch">
+            <h1>Get in Touch</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid quod molestias veritatis odio? Accusamus, velit explicabo dolore aut debitis iusto</p>
+        </div>
+        <form action="#">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <textarea name="message" id="message" placeholder="Send a Message"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <h1>&copy2025 Malhar Shinde</h1>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/malhar-shinde-1a88b6331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><img src="ASSETS/linkdin_logo.png" alt="linked_in"></a>
+            <a href="https://www.instagram.com/malharrrrrrrrrr/?igsh=NTFtZzRsb3h2ZnRl" target="_blank"><img src="ASSETS/instagram_icon.png" alt="instagram"></a>
+        </div>
+    </div>
+    <script>
+        function showSidenav(){
+            const sidenav=document.querySelector('.sidenav')
+            sidenav.style.display='flex'
+        }
+        function hideSidenav(){
+            const sidenav=document.querySelector('.sidenav')
+            sidenav.style.display='none'
+        }
+    </script>
+</body>
+</html>
